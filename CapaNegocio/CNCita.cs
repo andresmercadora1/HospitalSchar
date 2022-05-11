@@ -11,7 +11,21 @@ namespace CapaNegocio
 {
     public class CNCita
     {
-        CDCita objCita = new CDCita();
+        CDCita objDatoCita = new CDCita();
 
+        public bool guardarCita(CECita oCita)
+        {
+            return objDatoCita.guardarCita(oCita);
+        }
+
+        public bool actualizarCita(CECita oCita)
+        {
+            return objDatoCita.actualizarCita(oCita);
+        }
+
+        public DataSet consultarCita(CECita oCita)
+        {
+            return objDatoCita.consultarCita(oCita);
+        }
     }
 }
